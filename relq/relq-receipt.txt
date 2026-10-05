@@ -1,5 +1,0 @@
-minpoly(U) = MPU
-polredabs   = MPU
-J_plus = JPLUS
-J_minus = JMINUS
-U = JMINUS
