@@ -1,0 +1,18 @@
+{
+  "base_change": "original_t=s+5",
+  "bytes": 4661,
+  "input": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/function-field-polynomial.json",
+  "input_sha256": "99153217db4bffcf577007adde0d643fa60d14109654acb00a5e858372e43d0e",
+  "output": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/magma-function-field-shift5.m",
+  "output_sha256": "6b049a6bfd7a5e83726a9586934ae863647aa51c37099c375e0a8ef2c49fe747",
+  "prime": "s",
+  "proof_effort": 1,
+  "scope": "Only a completed CERTIFIED line proves M23; timeout/error leaves the exact interval M23 <= G_geom <= A23 unchanged.",
+  "seed": 1,
+  "short_ok": false,
+  "specialization_factor_degrees": [
+    23
+  ],
+  "specialization_source": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/galois-prime-scan.json",
+  "status": "magma_shifted_prime_probe_emitted"
+}

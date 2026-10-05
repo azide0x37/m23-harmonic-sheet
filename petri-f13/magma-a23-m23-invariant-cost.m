@@ -1,0 +1,15 @@
+SetSeed(1);
+SetVerbose("GaloisGroup", 5);
+SetVerbose("Invariant", 3);
+G := Alt(23);
+Hdb := TransitiveGroup(23, 5);
+H := sub<G | [ G!h : h in Generators(Hdb) ]>;
+assert #H eq 10200960;
+assert IsMaximal(G, H);
+printf "GROUPS A23_order=%o M23_order=%o index=%o\n", #G, #H, Index(G,H);
+time cost, make := GaloisGroupInvariant(G, H : DoCost := true);
+printf "INVARIANT_COST %o\n", cost;
+time invariant := make();
+printf "INVARIANT rank=%o text=%o\n", Rank(Parent(invariant)), PrettyPrintInvariant(invariant);
+assert &and[ IsInvariant(invariant, h) : h in Generators(H) ];
+print "INVARIANT_CONSTRUCTED";

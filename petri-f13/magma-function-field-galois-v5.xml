@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<calculator><headers><max_time>60</max_time><max_input>50000</max_input><seed>3125316036</seed><version>2.29-9</version><warning>The computation exceeded the time limit and so was terminated prematurely.</warning></headers><results><line>INPUT_BINDING exact-map-sha256=4d32f1fad043da73580d0486a4e3e9920a8edc0a546bfb5d\</line><line>1a927448d98ee6a7 extraction-sha256=99153217db4bffcf577007adde0d643fa60d14109654\</line><line>acb00a5e858372e43d0e</line><line>POLYNOMIAL degree=23 irreducible=true separable=true</line></results></calculator>

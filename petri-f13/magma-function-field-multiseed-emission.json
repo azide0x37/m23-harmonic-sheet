@@ -1,0 +1,65 @@
+{
+  "bytes": 5167,
+  "input": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/function-field-polynomial.json",
+  "input_sha256": "99153217db4bffcf577007adde0d643fa60d14109654acb00a5e858372e43d0e",
+  "output": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/magma-function-field-prime23-multiseed.m",
+  "output_sha256": "1436962f9bbcb7edd4dc156888ae75980522f5c432ba93153d276d0a5086e3d1",
+  "prime_suite": [
+    {
+      "b": 4,
+      "c": 4,
+      "frobenius_order": 23
+    },
+    {
+      "b": 4,
+      "c": 11,
+      "frobenius_order": 3
+    },
+    {
+      "b": 0,
+      "c": 6,
+      "frobenius_order": 4
+    },
+    {
+      "b": 1,
+      "c": 5,
+      "frobenius_order": 5
+    },
+    {
+      "b": 1,
+      "c": 3,
+      "frobenius_order": 6
+    },
+    {
+      "b": 0,
+      "c": 1,
+      "frobenius_order": 7
+    },
+    {
+      "b": 1,
+      "c": 2,
+      "frobenius_order": 8
+    },
+    {
+      "b": 0,
+      "c": 0,
+      "frobenius_order": 11
+    },
+    {
+      "b": 0,
+      "c": 4,
+      "frobenius_order": 14
+    },
+    {
+      "b": 0,
+      "c": 3,
+      "frobenius_order": 15
+    }
+  ],
+  "prime_suite_source": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/magma-quadratic-prime-scan.xml",
+  "proof_effort": 1,
+  "scope": "A successful CERTIFIED line would prove M23; a timeout or any Magma error proves no group-theoretic upper bound.",
+  "seed": 1,
+  "short_ok": false,
+  "status": "magma_multiseed_probe_emitted"
+}

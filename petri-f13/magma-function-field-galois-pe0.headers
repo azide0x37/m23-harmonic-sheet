@@ -1,0 +1,6 @@
+HTTP/1.1 200 OK
+Date: Wed, 02 Sep 2026 16:12:08 GMT
+Server: Apache
+Transfer-Encoding: chunked
+Content-Type: text/xml;charset=UTF-8
+

@@ -1,0 +1,20 @@
+{
+  "boundary": "emission only; calculator receipts are separate",
+  "outputs": [
+    "magma-p9319-linear-prime-scan.m",
+    "magma-p9319-quadratic-prime-scan.m",
+    "magma-p9319-galois-template.m",
+    "magma-p9319-galois-quadratic-template.m",
+    "magma-p9319-galois-c5-1^5_3^6.m",
+    "magma-p9319-galois-c740-1^7_2^8.m",
+    "magma-p9319-galois-c2-23.m",
+    "magma-p9319-galois-c1-1_2_4_8^2.m",
+    "magma-p9319-galois-q212-1_5-3_6.m",
+    "magma-p9319-galois-q32-23.m",
+    "magma-p9319-galois-q57-1_3-2_2-4_4.m"
+  ],
+  "polynomial_sha256": "38d0069465d628212cd2d0fba547fac079094fdd42d62d09ae1984f937b71826",
+  "schema": "p9319-magma-probe-emission-v1",
+  "source": "outputs/m23-proof-closeout-20260902/agents/petri-model-exactify/split-prime-p9319-a3983-s273-pair3-resultant-v2.xml",
+  "source_sha256": "ae11d09d214f4bb1c26086b26bcb0bb60814724991783f13f6812534a89d4184"
+}

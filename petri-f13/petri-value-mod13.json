@@ -1,0 +1,77 @@
+{
+  "boundary": "This certifies the arithmetic value once an actual Hurwitz sheet is shown to have this Petri coordinate; it does not construct or bind such a sheet.",
+  "conclusion": "The exact descended Petri value h(alpha) generates F_(13^6) over F_13 and is a root of the reduced certified Petri sextic.",
+  "field": {
+    "compact_polynomial_coefficients_ascending_mod13": [
+      4,
+      5,
+      1,
+      10,
+      10,
+      12,
+      1
+    ],
+    "compact_polynomial_irreducible": true,
+    "definition": "F_13[alpha]/g(alpha)",
+    "g_at_alpha": 0,
+    "order": 4826809
+  },
+  "frobenius": {
+    "orbit_integer_encodings": [
+      4346345,
+      3535114,
+      4093780,
+      1522316,
+      1615729,
+      171784
+    ],
+    "orbit_size": 6,
+    "proper_subfield_tests": {
+      "1": false,
+      "2": false,
+      "3": false
+    },
+    "theta_to_13_power_6_equals_theta": true
+  },
+  "petri_value": {
+    "definition": "theta_U=h(alpha)",
+    "h_coefficients_ascending_mod13": [
+      3,
+      0,
+      4,
+      2,
+      9,
+      11
+    ],
+    "minimal_polynomial_coefficients_ascending_mod13": [
+      1,
+      1,
+      7,
+      6,
+      1,
+      7,
+      1
+    ],
+    "minimal_polynomial_degree": 6,
+    "petri_polynomial_coefficients_ascending_mod13": [
+      1,
+      1,
+      7,
+      6,
+      1,
+      7,
+      1
+    ],
+    "petri_polynomial_value": 0,
+    "theta_integer_encoding": 4346345,
+    "theta_polynomial_vector_ascending": [
+      3,
+      0,
+      4,
+      2,
+      9,
+      11
+    ]
+  },
+  "status": "exact"
+}

@@ -1,0 +1,140 @@
+{
+  "schema": "m23-monodromy-audit-v1",
+  "date": "2026-09-02",
+  "status": "blocked_at_M23_upper_bound",
+  "exact_group_statement": {
+    "geometric_monodromy_candidates": [
+      "M23",
+      "A23"
+    ],
+    "M23_order": 10200960,
+    "A23_order": "12926008369442488320000",
+    "A23_over_M23_index": "1267136462592000",
+    "certificate_obtained": false,
+    "reason": "passport and Frobenius cycle types do not distinguish M23 from A23"
+  },
+  "candidate_bindings": {
+    "exact_f13_map": {
+      "path": "exact-f13-map.json",
+      "sha256": "4d32f1fad043da73580d0486a4e3e9920a8edc0a546bfb5d1a927448d98ee6a7"
+    },
+    "exact_passport": {
+      "path": "sage-passport-probe.json",
+      "sha256": "a6846e9f3ee2496394910fa4a35e51547b86474dd972d67687046e19a3a143ee",
+      "passport": [
+        "23",
+        "2^8 1^7",
+        "23"
+      ]
+    },
+    "exact_petri_binding": {
+      "path": "petri-binding-mod13.json",
+      "sha256": "ee72285177ef89b78946d03894f6549551f6928a3f51dca2e980e847ab153d73",
+      "value": "3+4*a^2+2*a^3+9*a^4+11*a^5",
+      "frobenius_degree": 6
+    },
+    "degree_23_polynomial": {
+      "path": "function-field-polynomial.json",
+      "sha256": "99153217db4bffcf577007adde0d643fa60d14109654acb00a5e858372e43d0e",
+      "degree": 23,
+      "irreducible": true,
+      "separable": true
+    }
+  },
+  "frobenius_evidence": {
+    "f13_degree6_linear_scan": {
+      "path": "galois-prime-scan.json",
+      "sha256": "7ee57630b8fb33296bc4c4aa741ecf5389864b606156f02451b9d90e2a71442d",
+      "requested": 4096,
+      "unramified": 4095,
+      "all_patterns_M23_compatible": true,
+      "scope": "corroboration only"
+    },
+    "p9319_linear_scan": {
+      "path": "magma-p9319-linear-prime-scan.xml",
+      "sha256": "d39509b894b9c063ceb6fe465722896f81bcbf40d5764e8d8df0e8c51cb91372",
+      "unramified": 9315,
+      "distinct_patterns": 11,
+      "all_patterns_M23_compatible": true,
+      "elapsed_seconds": 5.28,
+      "scope": "corroboration only"
+    },
+    "p9319_quadratic_scan": {
+      "path": "magma-p9319-quadratic-prime-scan.xml",
+      "sha256": "2d80bc6c325322b859939b9323c35c9483b8e7ea85075f9fd32ca243d94cc248",
+      "irreducible_unramified": 130,
+      "distinct_patterns": 10,
+      "all_patterns_M23_compatible": true,
+      "elapsed_seconds": 1.51,
+      "scope": "prime selection and corroboration only"
+    }
+  },
+  "magma_exact_attempts": {
+    "engine": "official public Magma calculator V2.29-9",
+    "limit_seconds": 60,
+    "result": "no completed GaloisGroup return",
+    "linear_prime_failure": {
+      "kind": "internal_assertion",
+      "location": "package/Ring/GaloisGrp/GalFldFun.m:986",
+      "reproduced_over": [
+        "F_(13^6)(t)",
+        "F_9319(t)"
+      ]
+    },
+    "quadratic_prime_result": {
+      "path": "magma-p9319-galois-q212.xml",
+      "sha256": "cb2ce05ccb069a1830f9c27aba6f4080dc8a0e513c8fb5760344ab756a538d88",
+      "prime": "U^2+212 over F_9319",
+      "local_factor_pattern": "1^5 3^6",
+      "printed_local_generator": "(6,23,7)(8,20,9)(10,16,14)(11,17,12)(13,22,19)(15,18,21)",
+      "global_result": "timeout"
+    }
+  },
+  "relative_invariant": {
+    "formula": "J(x)=sum_{B in Witt heptads}(sum_{i in B}x_i)^5",
+    "seed_heptad": [
+      1,
+      4,
+      11,
+      12,
+      16,
+      19,
+      23
+    ],
+    "heptads": 253,
+    "four_subsets": 8855,
+    "design": "S(4,7,23)",
+    "design_automorphism_group_order": 10200960,
+    "magma_worklevel": 5,
+    "magma_evaluation_cost_multiplications": 1012,
+    "rank": 23,
+    "executable": {
+      "path": "magma-steiner-invariant.m",
+      "sha256": "c3e92cecfab49e64d99ab9e5425408a53a1b6399b297f2c122dcb0e92a083a61"
+    },
+    "raw_receipt": {
+      "path": "magma-steiner-invariant-v2.xml",
+      "sha256": "c5c2531045c73ec3ed9409c7140fa8e60459b2770c6ac86fb4316d326719d8ab"
+    },
+    "candidate_evaluation_completed": false,
+    "missing_gate": "certified global ordering of the candidate roots or an equivalent resolvent factorization"
+  },
+  "selected_fallback": {
+    "path": "MON13-FOURSET-ALGORITHM.md",
+    "sha256": "498939ed1b8ec408f23db69dc380dbe6c4efa3c6e40714e4773ea9e30d39ab08",
+    "construction": "quartic-divisor scheme from Rem(h,Q_U)",
+    "fixed_field_degree": 8855,
+    "ordered_tower_degree_not_used": 212520,
+    "decisive_factorization": {
+      "M23": [
+        3,
+        16
+      ],
+      "A23": [
+        19
+      ]
+    },
+    "executed": false
+  },
+  "claim_boundary": "The exact map, passport, Petri value, and irreducible degree-23 sheet polynomial are certified. M23 monodromy is not certified until either the relative invariant is evaluated with a certified root labeling or the direct degree-8855 four-set construction returns and verifies the 3+16 factorization."
+}

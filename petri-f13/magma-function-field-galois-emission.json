@@ -1,0 +1,13 @@
+{
+  "bytes": 4532,
+  "input": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/function-field-polynomial.json",
+  "input_sha256": "99153217db4bffcf577007adde0d643fa60d14109654acb00a5e858372e43d0e",
+  "output": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/magma-function-field-galois-pe0.m",
+  "output_sha256": "066f3b7ecae728500f4c3b867bc153842b8b089f97ad8a99cd533d9487eec1c0",
+  "proof_effort": 0,
+  "public_calculator_input_limit": 50000,
+  "seed": 1,
+  "short_ok": false,
+  "status": "magma_function_field_probe_emitted",
+  "under_limit": true
+}

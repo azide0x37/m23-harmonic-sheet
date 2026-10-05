@@ -1,0 +1,8 @@
+curve ideal ready
+base saturation 8 7
+zero/pole residual 23 23
+ramification irrelevant saturation 13
+ramification base saturation 2
+ramification zero-value saturation 1
+elimination Ideal (t + (3*a^5 + 4*a^4 + 2*a^3 + a^2 + a - 5)) of Multivariate Polynomial Ring in x0, x1, x2, x3, t over Finite Field in a of size 13^6
+RESULT_JSON={"base": {"dimension": 1, "groebner_basis_size": 6, "hilbert_polynomial": "7", "saturation_exponent": 8}, "curve_ideal_dimension": 2, "elapsed_seconds": 81.61275744100567, "field": {"characteristic": 13, "degree": 6}, "finite_nonzero_ramification": {"base_saturation_exponent": 2, "branch_value": [10, 9, 11, 12, 12, 5], "branch_value_text": "10*a^5 + 9*a^4 + 11*a^3 + 12*a^2 + 12*a + 5", "elimination_generators": ["t + (3*a^5 + 4*a^4 + 2*a^3 + a^2 + a - 5)"], "ideal_dimension": 1, "irrelevant_saturation_exponent": 13, "zero_value_saturation_exponent": 1}, "pole_fibre_after_base_removal": {"dimension": 1, "hilbert_polynomial": "23", "radical_hilbert_polynomial": "1", "saturation_exponent": 1}, "sage_version": "10.9", "status": "sage_exact_passport_probe", "third_fibre": {"base_saturation_exponent": 1, "dimension": 1, "excess_length": 8, "fibre_ideal_contained_in_radical": true, "hilbert_polynomial": "23", "length": 23, "multiplicity_partition_geometric": [2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1], "passport_certified": true, "radical_hilbert_polynomial": "15", "radical_length": 15, "radical_square_contained_in_fibre_ideal": true, "ramification_contribution": 8}, "zero_fibre_after_base_removal": {"dimension": 1, "hilbert_polynomial": "23", "radical_hilbert_polynomial": "1", "saturation_exponent": 1}}

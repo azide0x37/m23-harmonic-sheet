@@ -1,0 +1,761 @@
+{
+  "boundary": {
+    "does_not_prove": "that the candidate is an actual Hurwitz cover; the opposite 23-ramification point, degree-23 map, full tame passport, and M23 monodromy still require exact construction",
+    "proves": "the exact reduced candidate curve has the reported 4K jet kernel at the marked point over F_(13^6)"
+  },
+  "degree_four_osculation": {
+    "ambient_kernel_dimension": 14,
+    "ambient_quartic_monomials": 35,
+    "degree_four_ideal_rank": 14,
+    "h0_4K_dimension": 21,
+    "jet_matrix_rank": 21,
+    "jet_orders_imposed": [
+      0,
+      22
+    ],
+    "osculating_section": null,
+    "osculating_section_vanishing_order": null,
+    "quotient_kernel_dimension": 0,
+    "section_series_coefficients_23_onward": null
+  },
+  "field": {
+    "alpha_vector_high_to_low": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "characteristic": 13,
+    "compact_polynomial_coefficients_descending_mod_13": [
+      1,
+      12,
+      10,
+      10,
+      1,
+      5,
+      4
+    ],
+    "compact_polynomial_irreducible": true,
+    "degree": 6,
+    "order": 4826809,
+    "sqrt_check": true,
+    "sqrt_minus_23": 4
+  },
+  "inputs": {
+    "cubic": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/artifacts/petri-p200-cubic-certificate.json",
+    "cubic_sha256": "eb236aae0ced620e96b1b74e1aafe39113a147d3ff09bd218ca57afbc3be4ffe",
+    "quadric": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/artifacts/petri-p200-quadric-certificate.json",
+    "quadric_sha256": "dcec6202f032b580a6fe8312b0931045686f16f9f23dc10cd3cd9cdd206c0cc4"
+  },
+  "marked_point": {
+    "curve_equations_vanish_through_order": 26,
+    "jacobian_nonzero": true,
+    "local_parameter": "t=x1/x0",
+    "projective_coordinates": [
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    "x2_series_coefficients_ascending": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        8,
+        2,
+        9,
+        10,
+        0,
+        2
+      ],
+      [
+        5,
+        5,
+        12,
+        5,
+        10,
+        9
+      ],
+      [
+        10,
+        3,
+        11,
+        2,
+        7,
+        12
+      ],
+      [
+        11,
+        10,
+        6,
+        7,
+        5,
+        1
+      ],
+      [
+        12,
+        11,
+        12,
+        6,
+        1,
+        0
+      ],
+      [
+        5,
+        0,
+        4,
+        11,
+        10,
+        11
+      ],
+      [
+        11,
+        1,
+        4,
+        0,
+        9,
+        5
+      ],
+      [
+        5,
+        7,
+        0,
+        12,
+        6,
+        0
+      ],
+      [
+        0,
+        12,
+        12,
+        4,
+        2,
+        5
+      ],
+      [
+        4,
+        4,
+        11,
+        10,
+        8,
+        10
+      ],
+      [
+        4,
+        12,
+        11,
+        9,
+        10,
+        8
+      ],
+      [
+        8,
+        2,
+        6,
+        3,
+        5,
+        1
+      ],
+      [
+        9,
+        5,
+        12,
+        10,
+        12,
+        5
+      ],
+      [
+        10,
+        12,
+        4,
+        11,
+        7,
+        12
+      ],
+      [
+        4,
+        0,
+        1,
+        2,
+        0,
+        9
+      ],
+      [
+        10,
+        10,
+        0,
+        11,
+        2,
+        5
+      ],
+      [
+        11,
+        6,
+        10,
+        0,
+        0,
+        12
+      ],
+      [
+        10,
+        4,
+        7,
+        2,
+        7,
+        11
+      ],
+      [
+        9,
+        12,
+        2,
+        12,
+        4,
+        3
+      ],
+      [
+        8,
+        0,
+        5,
+        4,
+        12,
+        2
+      ],
+      [
+        7,
+        6,
+        6,
+        2,
+        5,
+        7
+      ],
+      [
+        3,
+        1,
+        9,
+        5,
+        5,
+        10
+      ],
+      [
+        6,
+        8,
+        4,
+        1,
+        5,
+        0
+      ],
+      [
+        10,
+        2,
+        3,
+        10,
+        11,
+        1
+      ]
+    ],
+    "x3_series_coefficients_ascending": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        3,
+        7,
+        0,
+        9
+      ],
+      [
+        4,
+        9,
+        9,
+        10,
+        10,
+        4
+      ],
+      [
+        8,
+        6,
+        6,
+        0,
+        11,
+        10
+      ],
+      [
+        9,
+        12,
+        4,
+        12,
+        5,
+        1
+      ],
+      [
+        6,
+        6,
+        11,
+        11,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        9,
+        11,
+        9,
+        1
+      ],
+      [
+        9,
+        1,
+        5,
+        5,
+        9,
+        5
+      ],
+      [
+        8,
+        4,
+        9,
+        7,
+        1,
+        8
+      ],
+      [
+        9,
+        7,
+        6,
+        2,
+        4,
+        2
+      ],
+      [
+        2,
+        8,
+        0,
+        3,
+        8,
+        5
+      ],
+      [
+        3,
+        9,
+        7,
+        5,
+        1,
+        9
+      ],
+      [
+        4,
+        3,
+        12,
+        9,
+        6,
+        2
+      ],
+      [
+        1,
+        4,
+        6,
+        12,
+        9,
+        9
+      ],
+      [
+        12,
+        4,
+        5,
+        7,
+        7,
+        4
+      ],
+      [
+        3,
+        3,
+        2,
+        1,
+        6,
+        5
+      ],
+      [
+        12,
+        8,
+        6,
+        2,
+        9,
+        10
+      ],
+      [
+        8,
+        6,
+        3,
+        11,
+        2,
+        9
+      ],
+      [
+        2,
+        5,
+        6,
+        2,
+        11,
+        4
+      ],
+      [
+        9,
+        7,
+        10,
+        4,
+        11,
+        10
+      ],
+      [
+        8,
+        8,
+        12,
+        6,
+        9,
+        3
+      ],
+      [
+        8,
+        4,
+        5,
+        1,
+        4,
+        1
+      ],
+      [
+        3,
+        6,
+        2,
+        9,
+        3,
+        9
+      ],
+      [
+        1,
+        1,
+        7,
+        11,
+        8,
+        7
+      ],
+      [
+        6,
+        4,
+        6,
+        0,
+        5,
+        3
+      ]
+    ]
+  },
+  "reduced_model": {
+    "ambient": "P^3 over F_(13^6)",
+    "cubic_coefficients": {
+      "(0, 0, 0)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(0, 0, 1)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(0, 0, 2)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(0, 0, 3)": [
+        0,
+        12,
+        1,
+        10,
+        9,
+        9
+      ],
+      "(0, 1, 1)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(0, 1, 2)": [
+        8,
+        10,
+        3,
+        5,
+        11,
+        12
+      ],
+      "(0, 1, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(0, 2, 2)": [
+        9,
+        2,
+        11,
+        11,
+        2,
+        2
+      ],
+      "(0, 2, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(0, 3, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(1, 1, 1)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(1, 1, 2)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(1, 1, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(1, 2, 2)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(1, 2, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(1, 3, 3)": [
+        8,
+        6,
+        8,
+        6,
+        11,
+        12
+      ],
+      "(2, 2, 2)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(2, 2, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(2, 3, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(3, 3, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "curve_definition": "Q=0 and C=0",
+    "integral_scaling": {
+      "cubic": "multiply the characteristic-zero chosen gauge by 13 before reduction",
+      "prime": "(13,s-4)",
+      "quadric": "no power of 13"
+    },
+    "quadric_coefficients": {
+      "(0, 0)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(0, 1)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "(0, 2)": [
+        3,
+        1,
+        2,
+        4,
+        4,
+        2
+      ],
+      "(0, 3)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        12
+      ],
+      "(1, 1)": [
+        10,
+        12,
+        11,
+        9,
+        9,
+        11
+      ],
+      "(1, 2)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "(1, 3)": [
+        11,
+        6,
+        7,
+        2,
+        5,
+        10
+      ],
+      "(2, 2)": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "(2, 3)": [
+        3,
+        8,
+        3,
+        4,
+        2,
+        7
+      ],
+      "(3, 3)": [
+        7,
+        3,
+        3,
+        8,
+        11,
+        0
+      ]
+    }
+  },
+  "status": "exact_finite_field_probe"
+}

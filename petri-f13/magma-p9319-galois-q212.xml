@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<calculator><headers><max_time>60</max_time><max_input>50000</max_input><seed>1102276861</seed><version>2.29-9</version><warning>The computation exceeded the time limit and so was terminated prematurely.</warning></headers><results><line>EXACT_POLYNOMIAL_OK</line><line>QPRIME U^2 + 212</line><line>QPRIME_PATTERN [ 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3 ]</line><line>Generator of used local group:</line><line>(6, 23, 7)(8, 20, 9)(10, 16, 14)(11, 17, 12)(13, 22, 19)(15, 18, 21)</line><line>Found with precision 1</line></results></calculator>

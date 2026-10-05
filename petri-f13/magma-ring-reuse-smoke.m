@@ -1,0 +1,12 @@
+SetSeed(1);
+SetVerbose("GaloisGroup", 5);
+Fp := GF(7);
+K<t> := FunctionField(Fp);
+P<x> := PolynomialRing(K);
+q := t^2 + t + 3;
+h := x^3 + x + 1;
+G0, r0, S0 := GaloisGroup(h : Prime := q);
+printf "SETUP order=%o prime=%o ring=%o\n", #G0, S0`Prime, S0`Ring;
+f := x^5 + t*x + 1;
+G1, r1, S1 := GaloisGroup(f : Prime := q, Ring := S0);
+printf "REUSE order=%o prime=%o ring=%o\n", #G1, S1`Prime, S1`Ring;

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use these artifacts, cite the paper (preferred-citation) and the artifacts release."
+title: "Artifacts: The Harmonic Sheet and the Sextic Orbit"
+type: software
+authors:
+  - family-names: Templeton
+    given-names: Alexander West
+    orcid: "https://orcid.org/0009-0005-7058-3912"
+repository-code: "https://github.com/azide0x37/m23-harmonic-sheet"
+license: MIT
+version: 1.0.0
+date-released: "2026-10-05"
+preferred-citation:
+  type: article
+  title: "The Harmonic Sheet and the Sextic Orbit"
+  authors:
+    - family-names: Templeton
+      given-names: Alexander West
+      orcid: "https://orcid.org/0009-0005-7058-3912"
+  year: 2026
+  doi: "10.5281/zenodo.XXXXXXXX"
+  notes: "preprint; fill in the Zenodo DOI at release"

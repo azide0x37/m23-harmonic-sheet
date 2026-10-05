@@ -1,0 +1,10 @@
+SetVerbose("GaloisGroup", 5);
+Fp := GF(7);
+K<t> := FunctionField(Fp);
+P<x> := PolynomialRing(K);
+f := x^5 + t*x + 1;
+F<z> := FunctionField(f);
+S := GetGaloisData(F : data_only := true, use_subfields := false);
+print S;
+G, r, S1 := GaloisGroup(f : Ring := S);
+print #G;

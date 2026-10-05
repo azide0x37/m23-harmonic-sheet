@@ -1,0 +1,50 @@
+{
+  "title": "Artifacts: The Harmonic Sheet and the Sextic Orbit",
+  "description": "Computational artifacts for the paper: the exact canonical model over F(sqrt(-23)) of one of the six non-rational M23 Hurwitz points of type (2A,23A,23B), its exact verification (V1)-(V8) in PARI/GP, the eight-point certificate (V9)-(V10) that the degree-23 map has exactly three branch points (an exact plane relation H_0(tau,U)=0 of bidegree (5,23) and the exact factorization H_0(b,U) = q_7 d_8^2), the exact characteristic-13 model with its Petri value, the sextic field receipts, and the characteristic-13 and characteristic-23 certificates of Parts I and II. The project made extensive, fully disclosed use of AI systems (Claude, Anthropic; ChatGPT, OpenAI) for exploration, code, computation, analysis and drafting under the author's direction; AI-generated suggestions were not treated as mathematical evidence, and every computational claim carries a reproducible artifact.",
+  "creators": [
+    {
+      "name": "Templeton, Alexander West",
+      "orcid": "0009-0005-7058-3912"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "inverse Galois problem",
+    "Mathieu group M23",
+    "Hurwitz spaces",
+    "stable reduction",
+    "three-point covers",
+    "Petri invariants",
+    "computational number theory"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.XXXXXXXX",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "relation": "cites",
+      "identifier": "arXiv:2608.08538",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "relation": "cites",
+      "identifier": "10.5281/zenodo.22073397",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "relation": "cites",
+      "identifier": "10.5281/zenodo.22063042",
+      "resource_type": "software"
+    },
+    {
+      "relation": "cites",
+      "identifier": "arXiv:math/0205026",
+      "resource_type": "publication-article"
+    }
+  ],
+  "notes": "Fill in the paper DOI (isSupplementTo) once the Zenodo record for the paper is reserved. Directories mon13/, harmonic/, tails/, heptad/ must be present before this archive is cut."
+}

@@ -1,0 +1,71 @@
+{
+ "field": {
+  "characteristic": 13,
+  "degree": 6,
+  "modulus_descending": [
+   1,
+   12,
+   10,
+   10,
+   1,
+   5,
+   4
+  ],
+  "note": "k = F_13[a]/(a^6 - a^5 - 3a^4 - 3a^3 + a^2 + 5a + 4), the reduction of the Petri sextic"
+ },
+ "serialization_convention": {
+  "element_lists": "DESCENDING in a  (v = [c5,c4,c3,c2,c1,c0] means c5 a^5 + ... + c0)",
+  "t_coefficient_lists": "ASCENDING in t",
+  "evidence": "only this convention makes disc_u(H) = (t-lambda)^8 * (squares); the other three give 154 simple ramification points, impossible for a 3-branch-point cover"
+ },
+ "passport_from_the_model": {
+  "disc_numerator_factors_(deg,mult)": [
+   [
+    1,
+    8
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    12,
+    2
+   ],
+   [
+    38,
+    2
+   ]
+  ],
+  "reading": "the only odd-multiplicity factor is (t-lambda)^8; every other factor has even multiplicity and is an index^2 contribution of the non-maximal order, not ramification",
+  "different_degree": "8 (at lambda) + 22 (at the place P1, e=23) + 22 (at infinity) = 52 = 2g-2 + 2*23 with g = 4"
+ },
+ "middle_2A_branch_value_lambda": "10*a^5 + 9*a^4 + 11*a^3 + 12*a^2 + 12*a + 5",
+ "lambda_descending_coeffs": [
+  10,
+  9,
+  11,
+  12,
+  12,
+  5
+ ],
+ "fibre_at_lambda": "q7 * d8^2 exactly (verified as a polynomial identity)",
+ "canonical_heptad_seed_q7": "u^7 + (3*a^5+12*a^4+11*a^3+9*a^2+10)*u^6 + (a^5+10*a^4+10*a^3+12*a+10)*u^5 + (12*a^5+5*a^4+6*a^3+a^2+a+9)*u^4 + (10*a^5+4*a^4+3*a^3+3*a^2+a+2)*u^3 + (a^5+8*a^4+9*a^3+5*a^2+5*a+9)*u^2 + (2*a^5+8*a^4+11*a^3+9*a^2+4*a+1)*u + (11*a^5+7*a^4+7*a^3+2*a^2+11*a+12)",
+ "d8": "u^8 + (4*a^5+4*a^4+2*a^3+5*a^2+7*a+7)*u^7 + (12*a^5+8*a^4+a^2+12*a+4)*u^6 + (8*a^5+7*a^4+5*a^3+11*a^2+5*a+8)*u^5 + (2*a^5+2*a^4+8*a^3+7*a^2+9*a+6)*u^4 + (5*a^5+10*a^4+3*a^3+6*a^2+a+6)*u^3 + (3*a^5+2*a^4+5*a^3+5*a^2+4)*u^2 + (7*a^5+a^4+3*a^3+a^2+9*a+3)*u + (6*a^5+2*a^4+6*a^3+7*a^2+2*a+2)",
+ "pole_structure_of_the_sheet_coordinate": {
+  "at_infinity": "u is a unit (all deg_t c_i = 0, two are -1)",
+  "place_P1_degree_1": "Newton hull [[0,-1],[23,0]]: all 23 roots have v(u) = -1/23; P1 is totally ramified, e = 23",
+  "place_P2_degree_1": "hull [[0,-1],[22,-1],[23,0]]: 22 roots units, ONE root with v(u) = -1",
+  "place_P3_degree_2": "same shape: 22 roots units, ONE root with v(u) = -1",
+  "consequence": "the P2/P3 poles are what blow up every resolvent degree bound: only 1 of 23 roots has the pole, so a heptad sum can have a pole of order 1 there and e_i(theta) a pole of order min(i,77) -- versus floor(i/23) if the poles sat only over P1",
+  "fix": "re-serialize the sheet polynomial with a Riemann-Roch generator of L(mQ), Q the point over P1: then deg_t c_i <= floor(m*i/23), which is the slope m/23 the chain already assumes (m = 4 gives 5820 unknowns)"
+ }
+}

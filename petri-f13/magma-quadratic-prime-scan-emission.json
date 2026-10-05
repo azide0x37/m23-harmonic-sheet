@@ -1,0 +1,8 @@
+{
+  "bytes": 4998,
+  "candidate_count": 169,
+  "candidate_family": "T^2+(a+b)T+(a+c), b,c in F13",
+  "output": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/magma-quadratic-prime-scan.m",
+  "source": "/Users/lex/Development/github.com/azide0x37/IGP24/outputs/m23-proof-closeout-20260902/agents/petri-f13/magma-function-field-galois.m",
+  "status": "magma_quadratic_prime_scan_emitted"
+}
