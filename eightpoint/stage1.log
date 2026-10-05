@@ -1,0 +1,13 @@
+== stage 1: D, N (run_verify.gp sections 1-5)
+  model sha256 7423ca42... assumed; P_+ on X: [1, 1]
+  P_- on X: [1, 1]
+  expansions: 63692 ms
+  *** _*=_: Warning: increasing stack size to 16000000.
+  *** truncate: Warning: increasing stack size to 32000000.
+  dim H^0(5K-23P_+), dim H^0(5K-23P_-) = [4, 4]: 116522 ms
+  *** matker: Warning: increasing stack size to 64000000.
+  multiplier solution space (need 1): 1: 38502 ms
+  ord_{P_+}(D,N) = [23, 0]  ord_{P_-}(D,N) = [0, 23]
+  1/tau = c0 z^23 (1 + a1 z + a2 z^2 + ...), [a1,a2] = [Mod(0, x^2 + 23), Mod(0, x^2 + 23)]
+  digits of c0: 16853
+  written stage1-DN.bin  [DVEC, NVEC, c0]

@@ -1,0 +1,16 @@
+== stage 2 (fast library): NPP2 = 160; g = w^12 + 2*w^11 + 133*w^10 + 230*w^9 + 7653*w^8 + 10002*w^7 + 243203*w^6 + 206078*w^5 + 4482095*w^4 + 1912050*w^3 + 45359851*w^2 + 5230942*w + 194457104
+[  120.4 s] P_+ expansion done; Q, C vanish to precision: [1, 1] absprec: [160, 160]
+[  120.4 s] echelon: ord(y - z^2), ord(w - z^3) >= 4: [4, 4]
+[  207.7 s] D, N series: valuations [23, 0] (need 23, 0)
+[  403.9 s] 1/tau_1: valuation 23  leading coefficient 1: 1  a1, a2 =  [Mod(0, w^12 + 2*w^11 + 133*w^10 + 230*w^9 + 7653*w^8 + 10002*w^7 + 243203*w^6 + 206078*w^5 + 4482095*w^4 + 1912050*w^3 + 45359851*w^2 + 5230942*w + 194457104), Mod(0, w^12 + 2*w^11 + 133*w^10 + 230*w^9 + 7653*w^8 + 10002*w^7 + 243203*w^6 + 206078*w^5 + 4482095*w^4 + 1912050*w^3 + 45359851*w^2 + 5230942*w + 194457104)]  relative precision 137
+[  412.1 s] tau_1: valuation -23 relative precision 137
+[  412.3 s] E_3: sextic degree 6 valuation at 0 3 | e3 squarefree 1 | e3(0) != 0 1 | conic param on Q 1 | x3(P_-) != 0 1
+[  412.3 s] tangent v orthogonal to grad Q, grad C: [1, 1] | v nonzero on E_3: 1
+[  412.4 s] quadrics through P_+ + 2E_3: dim 3 (need 3) | A_U found: 1
+[  427.3 s] ord_{P_+}(A_U) (need 1): 1 | U_0 valuation -5 leading coeff 1: 1 | rel. precision 154 | digits of U_0(P_-): 3251
+[  535.0 s] powers done; absprec of tau^5, U^23: [22, 39]
+[  702.2 s] coefficients determined: 72 | gap orders: 44 | all gap checks vanish: 1
+[  702.2 s] remainder S = H_0(tau_1,U_0): absolute precision 22 | zero to that precision: 1
+h_{5,0} = -1: 1 | H_0(0,U) = U^23 (h_{0,k} = 0 for k < 23): 1 | Eisenstein h_{1,0} != 0: 1
+largest coefficient digits (Lw numerator): 38188
+[  702.3 s] written stage2-H0.bin (coefficient matrix, nested form) and eightpoint-H0.txt

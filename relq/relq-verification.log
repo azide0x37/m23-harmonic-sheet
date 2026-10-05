@@ -1,0 +1,46 @@
+== 0. the model
+  P_+ = (1:0:0:0) on X: [1, 1]
+  P_- on X: [1, 1]
+  q00=q01=0, q03=-1, q02=-q11, q12=q22=1: [1, 1, 1, 1, 1, 1]
+== 1. local expansions
+  P_+ to order 42: 5842 ms
+  P_- to order 34: 16802 ms
+  Q,C vanish at P_+: [42, 42]
+  Q,C vanish at P_-: [34, 34]
+== 2. the model is echelon at P_+ for the parameter z = x1/x0
+  ord(x2/x0 - z^2) (need >= 4): 4
+  ord(x3/x0 - z^3) (need >= 4): 4
+  ord(omega_0/(c dz) - 1) (need >= 3): 3
+== 3. the two quintic systems
+  quintic series: 49046 ms
+  rank of the 27 standard quintics (need 27): 27
+  dim H^0(5K-23P_+), dim H^0(5K-23P_-) = [4, 4]: 7271 ms
+  ord_{P_+} of the V_+ basis: [23, 23, 23, 23]
+  ord_{P_+} of the V_- basis: [0, 0, 0, 0]
+== 3b. base-point-freeness of |5K-23P_+| and |5K-23P_-|
+  quartic monomials: 35
+  rank of the 23-jet map on quartics at P_+ (need 21 = h^0(4K)): 21
+  rank of the 23-jet map on quartics at P_- (need 21 = h^0(4K)): 21
+  ==> h^0(4K-23P) = 0, so |5K-23P| is base-point-free and any g with g H^0(5K-23P_+) = H^0(5K-23P_-) has divisor 23P_- - 23P_+
+== 4. the multiplier: the unique g with g H^0(5K-23P_+) = H^0(5K-23P_-)
+  solution space (need 1): 1: 48814 ms
+  index 1: ord_{P_+}(D,N) = [23, 0]
+           ord_{P_-}(D,N) = [0, 23]
+== 5. tau at P_+ and admissibility of z
+  ord_{P_+}(1/tau) = 23
+  a1, a2 in 1/tau = c z^23 (1 + a1 z + a2 z^2 + ...): [Mod(0, x^2 + 23), Mod(0, x^2 + 23)]
+  J_+ = q13/q22 matches the LLL value: 1
+== 6. the echelon basis at P_- and J_-
+  ord_{P_-} tau = 23
+  echelon row 1: ord(omega'_k - w'^0) = 4
+  echelon row 2: ord(omega'_k - w'^1) = 4
+  echelon row 3: ord(omega'_k - w'^2) = 4
+  echelon row 4: ord(omega'_k - w'^3) = 4
+== 7. U and its minimal polynomial
+  U has no sqrt(-23) part: 1
+  minpoly(U) = 50019668646075143*x^6 + 206305139624557234*x^5 + 353749018385880145*x^4 - 55027953306246948*x^3 - 759255603013669319*x^2 - 868575878997768238*x - 139453053861313073
+  ==> g_U = Phi : 1
+  polredabs(minpoly(U)) = x^6 - x^5 - 3*x^4 - 3*x^3 + x^2 + 5*x + 4
+  J_- = Mod(Mod(-219051448639587523/4601809515438913156*y^5 + 662132559244474971/4601809515438913156*y^4 - 266418207781929355/4601809515438913156*y^3 + 256772595495992321/4601809515438913156*y^2 - 145546733094649219/4601809515438913156*y - 462232824183065315/4601809515438913156, y^6 - y^5 - 3*y^4 - 3*y^3 + y^2 + 5*y + 4)*x + Mod(18630760566083617/200078674584300572*y^5 - 32883346892524201/200078674584300572*y^4 - 44195861908694727/200078674584300572*y^3 + 10228555300742069/200078674584300572*y^2 + 15929108759671201/200078674584300572*y + 46246518625250261/200078674584300572, y^6 - y^5 - 3*y^4 - 3*y^3 + y^2 + 5*y + 4), x^2 + 23)
+  U   = Mod(7568631896021296/50019668646075143*y^5 - 29458505838561912/50019668646075143*y^4 + 22903915474596992/50019668646075143*y^3 + 25097895504098152/50019668646075143*y^2 + 14793393724122520/50019668646075143*y - 61970328454788839/50019668646075143, y^6 - y^5 - 3*y^4 - 3*y^3 + y^2 + 5*y + 4)
+  digits in the coefficients of D-hat, N-hat: [7823, 13742]

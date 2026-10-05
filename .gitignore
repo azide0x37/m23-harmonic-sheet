@@ -1,7 +1,7 @@
-*.aux
-*.log
-*.out
-*.synctex.gz
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
 __pycache__/
 *.pyc
 prev/
