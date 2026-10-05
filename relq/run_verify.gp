@@ -3,7 +3,7 @@
 \\ reconstructed M23 cover over L = F(sqrt(-23)) and compare with Phi.
 \\ ===================================================================
 T = varhigher("T");
-read("model_hat-400.gp");
+read("model-hat.gp");
 read("verify_L.gp");
 default(seriesprecision, 200);
 NPP = 42;      \\ series order at P_+

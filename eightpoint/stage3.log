@@ -1,43 +1,45 @@
 == stage 3: 13-adic precision N = 2500; H_0 degrees (U, b) = [23, 5]
 [    0.1 s] mod 13: disc_U(H_0) degree 110 val at b=0 22 | multiplicity of b3bar: 8 | factor (deg, mult): [[1, 22], [1, 2], [1, 8], [3, 2], [3, 2], [9, 2], [24, 2]]
 [    0.1 s] H_0(b3bar,U) mod 13 = q7 d8^2 with degrees (q7, d8) = (7, 8) | factors (deg, mult): [[1, 1], [1, 2], [1, 2], [1, 1], [1, 1], [1, 2], [1, 2], [2, 2], [2, 1], [2, 2], [2, 1]]
-[   26.0 s] Jacobian mod 13: rank 16 rows Vecsmall([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
-[   30.7 s] Newton step 1: residual valuation 1
-[   36.2 s] Newton step 2: residual valuation 2
-[   41.7 s] Newton step 3: residual valuation 4
-[   47.0 s] Newton step 4: residual valuation 8
-[   52.3 s] Newton step 5: residual valuation 16
+[   26.1 s] Jacobian mod 13: rank 16 rows Vecsmall([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
+[   30.8 s] Newton step 1: residual valuation 1
+[   36.0 s] Newton step 2: residual valuation 2
+[   41.5 s] Newton step 3: residual valuation 4
+[   47.1 s] Newton step 4: residual valuation 8
+[   52.4 s] Newton step 5: residual valuation 16
 [   57.6 s] Newton step 6: residual valuation 32
-[   62.7 s] Newton step 7: residual valuation 64
-[   68.0 s] Newton step 8: residual valuation 128
+[   63.0 s] Newton step 7: residual valuation 64
+[   68.2 s] Newton step 8: residual valuation 128
 [   73.3 s] Newton step 9: residual valuation 256
-[   78.4 s] Newton step 10: residual valuation 512
-[   83.4 s] Newton step 11: residual valuation 1024
-[   88.4 s] Newton step 12: residual valuation 2048
-[   88.8 s] Newton step 13: residual valuation 2500
-[   89.3 s] final residual valuation 2500 (need 2500)
-[   92.2 s] b_3 recognised: height 13^409.1, margin 13^744.7, digits 9447
-[   95.1 s]   q7 coefficient 0: height 13^597.5 margin 13^556.3
-[   98.3 s]   q7 coefficient 1: height 13^519.8 margin 13^634.1
-[  101.7 s]   q7 coefficient 2: height 13^442.6 margin 13^711.2
-[  104.8 s]   q7 coefficient 3: height 13^365.8 margin 13^788.1
-[  107.9 s]   q7 coefficient 4: height 13^287.3 margin 13^866.5
-[  110.8 s]   q7 coefficient 5: height 13^209.8 margin 13^944.0
-[  113.6 s]   q7 coefficient 6: height 13^132.4 margin 13^1021.4
-[  116.5 s]   d8 coefficient 0: height 13^675.0 margin 13^478.9
-[  119.7 s]   d8 coefficient 1: height 13^597.3 margin 13^556.5
-[  123.1 s]   d8 coefficient 2: height 13^520.8 margin 13^633.1
-[  126.4 s]   d8 coefficient 3: height 13^443.0 margin 13^710.8
-[  129.6 s]   d8 coefficient 4: height 13^365.7 margin 13^788.1
-[  132.7 s]   d8 coefficient 5: height 13^287.8 margin 13^866.0
-[  135.9 s]   d8 coefficient 6: height 13^210.2 margin 13^943.6
-[  138.8 s]   d8 coefficient 7: height 13^132.4 margin 13^1021.4
-[  138.8 s] worst recognition margin 13^478.9
-[  139.4 s] [1] H_0(b_3, U) == q7 * d8^2 exactly in L[U]: True
-[  140.2 s] [2] d8 squarefree of degree 8: True
-[  140.9 s] [3] gcd(q7, d8) = 1: True
-[  147.6 s] [4] gcd(d8, d/db H_0(b_3,U)) = 1 (the eight double roots are smooth points): True
-[  147.6 s] [5] b_3 != 0 and b_3 is a 13-adic unit: True
-[  147.6 s] [6] H_0(0,U) = U^23, h_{1,0} != 0 (Eisenstein), h_{5,0} = -1: True
+[   78.5 s] Newton step 10: residual valuation 512
+[   83.7 s] Newton step 11: residual valuation 1024
+[   88.6 s] Newton step 12: residual valuation 2048
+[   89.1 s] Newton step 13: residual valuation 2500
+[   89.6 s] final residual valuation 2500 (need 2500)
+[   92.6 s] b_3 recognised: height 13^409.1, margin 13^744.7, digits 9447
+[   95.7 s]   q7 coefficient 0: height 13^597.5 margin 13^556.3
+[   99.0 s]   q7 coefficient 1: height 13^519.8 margin 13^634.1
+[  102.5 s]   q7 coefficient 2: height 13^442.6 margin 13^711.2
+[  105.7 s]   q7 coefficient 3: height 13^365.8 margin 13^788.1
+[  108.9 s]   q7 coefficient 4: height 13^287.3 margin 13^866.5
+[  112.0 s]   q7 coefficient 5: height 13^209.8 margin 13^944.0
+[  114.9 s]   q7 coefficient 6: height 13^132.4 margin 13^1021.4
+[  117.8 s]   d8 coefficient 0: height 13^675.0 margin 13^478.9
+[  120.9 s]   d8 coefficient 1: height 13^597.3 margin 13^556.5
+[  124.5 s]   d8 coefficient 2: height 13^520.8 margin 13^633.1
+[  127.8 s]   d8 coefficient 3: height 13^443.0 margin 13^710.8
+[  130.9 s]   d8 coefficient 4: height 13^365.7 margin 13^788.1
+[  133.9 s]   d8 coefficient 5: height 13^287.8 margin 13^866.0
+[  137.2 s]   d8 coefficient 6: height 13^210.2 margin 13^943.6
+[  140.1 s]   d8 coefficient 7: height 13^132.4 margin 13^1021.4
+[  140.1 s] worst recognition margin 13^478.9
+[  140.7 s] [1] H_0(b_3, U) == q7 * d8^2 exactly in L[U]: True
+[  141.5 s] [2] d8 squarefree of degree 8: True
+[  142.2 s] [3] gcd(q7, d8) = 1: True
+[  148.9 s] [4] gcd(d8, d/db H_0(b_3,U)) = 1 (the eight double roots are smooth points): True
+[  148.9 s] [5] b_3 != 0 and b_3 is a 13-adic unit: True
+[  148.9 s] [6] H_0(0,U) = U^23, h_{1,0} != 0 (Eisenstein), h_{5,0} = -1: True
+[  149.2 s] [7] q7 squarefree of degree 7 (the fibre over b_3 has 15 distinct points): True
+[  149.2 s] [8] c0 (tau_1 = c0 tau) is a 13-adic unit, so b_3/c0 is one too: True
 ==> EIGHT-POINT TEST: PASS -- the eight simple ramification points of tau lie over the single value b_3; tau has exactly three branch points
-[  147.6 s] written eightpoint-witness.txt / stage3-b3.bin
+[  149.2 s] written eightpoint-witness.txt / stage3-b3.bin

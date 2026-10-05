@@ -20,10 +20,10 @@ merely coincide modulo 13. See Remark 12.5 of the paper.
 |---|---|---|---|---|
 | 1 | `stage1-ND.gp` (gp) | sections 1–5 of `relq/run_verify.gp`: the quintics D, N with N/D = tau and the leading coefficient c0 of 1/tau | `stage1-DN.bin`, `stage1.log` | 5 min |
 | 2 | `stage2.py` (+ `lser.gp`) | P+ expansion to order 160; tau_1 = c0 tau; U_0 in L(5P+) with U_0(P-) = 0 via the residual divisor E_3 of the osculating plane; the plane relation H_0(tau_1, U_0) = 0 by back-substitution (72 coefficients, 44 gap checks, remainder zero to z^22) | `eightpoint-H0.txt`, `stage2-H0.bin`, `stage2.log` | 12 min |
-| 3 | `stage3.py` (+ `stage3-lib.gp`) | b_3 mod 13 from the discriminant; Hensel lift of (b, q7, d8) to 13^2500; LLL recognition in L; **exact** checks H_0(b,U) = q7 d8^2, d8 squarefree of degree 8, gcd(q7,d8) = 1, gcd(d8, dH_0/dtau(b,U)) = 1, b a 13-unit | `eightpoint-witness.txt`, `stage3-b3.bin`, `stage3.log` | 150 s |
+| 3 | `stage3.py` (+ `stage3-lib.gp`) | b_3 mod 13 from the discriminant; Hensel lift of (b, q7, d8) to 13^2500; LLL recognition in L; **exact** checks H_0(b,U) = q7 d8^2, d8 squarefree of degree 8, gcd(q7,d8) = 1, gcd(d8, dH_0/dtau(b,U)) = 1, b a 13-unit, q7 squarefree, c0 a 13-unit | `eightpoint-witness.txt`, `stage3-b3.bin`, `stage3.log` | 150 s |
 
 The proof is the exact arithmetic in stages 2 and 3 (the gap checks and the
-vanishing of the remainder in stage 2; the six `[1]`–`[6]` checks in stage 3). The
+vanishing of the remainder in stage 2; the eight `[1]`–`[8]` checks in stage 3; both scripts exit 1 on any failure). The
 mod-13 reduction, the Hensel lift and the lattice reduction only *find* the witness.
 
 `lser.gp` is a small exact Laurent-series library over L written for this test:
@@ -56,4 +56,4 @@ Expected last line of `stage3.log`:
 
 Modulo 13 the discriminant of H_0 in U has degree 110 = 22 + 8 + 2·40: the point
 b = 0 (multiplicity 22), the third branch value (multiplicity 8), and the 40 nodes of the
-plane model in Frobenius orbits 1 + 3 + 3 + 9 + 24.
+plane model (double roots consistent with 40 nodes) in Frobenius orbits 1 + 3 + 3 + 9 + 24.

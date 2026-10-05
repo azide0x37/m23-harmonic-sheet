@@ -9,7 +9,8 @@ factorisation H_0(b_3, U) = q7(U) d8(U)^2 in L[U].
         Newton on an invertible 16x16 minor of the 23x16 Jacobian);
   (iii) recognise b_3, q7, d8 in L by LLL (lattice of dimension 13 + 6);
   (iv)  verify EXACTLY in L[U]: H_0(b_3,U) = q7 d8^2, d8 squarefree of degree
-        8, gcd(q7, d8) = 1, gcd(d8, d/db H_0(b_3,U)) = 1, b_3 != 0 a 13-unit.
+        8, gcd(q7, d8) = 1, gcd(d8, d/db H_0(b_3,U)) = 1, b_3 != 0 a 13-unit,
+        q7 squarefree, c0 a 13-unit.
 (iv) is the proof; (i)-(iii) only find the witness.   Usage: NPREC=N python3 stage3.py
 """
 import cypari2, time, sys, os
@@ -28,6 +29,7 @@ pari('T = varhigher("T"); s = varhigher("s"); b = varhigher("b"); U = varhigher(
 pari('read("model-hat.gp"); default(seriesprecision, 60)')
 pari(f'N = {N}')
 pari('[H0junk, H, AU, UPM, e3junk] = read("stage2-H0.bin")')
+pari('[DVEC, NVEC, c0] = read("stage1-DN.bin")')
 pari('H0 = U^23 + sum(j = 0, 5, sum(k = 0, 23, if(H[j+1,k+1] != 0, H[j+1,k+1] * b^j * U^k, 0)))')
 pari("ffa = ffgen(f*Mod(1,13), 'a)")
 pari('read("stage3-lib.gp")')
@@ -78,8 +80,11 @@ pari('HBb = subst(deriv(H0, b), b, b3)')
 c4 = bool(pari('poldegree(gcd(d8, HBb), U) == 0')); log(el(), "[4] gcd(d8, d/db H_0(b_3,U)) = 1 (the eight double roots are smooth points):", c4)
 c5 = bool(pari('b3 != 0 && red13(b3) != 0')); log(el(), "[5] b_3 != 0 and b_3 is a 13-adic unit:", c5)
 c6 = bool(pari('H[2,1] != 0 && vecmin(vector(23, k, H[1,k] == 0)) == 1 && H[6,1] == -1')); log(el(), "[6] H_0(0,U) = U^23, h_{1,0} != 0 (Eisenstein), h_{5,0} = -1:", c6)
-PASS = c1 and c2 and c3 and c4 and c5 and c6
+c7 = bool(pari('poldegree(gcd(q7, deriv(q7, U)), U) == 0 && poldegree(q7, U) == 7')); log(el(), "[7] q7 squarefree of degree 7 (the fibre over b_3 has 15 distinct points):", c7)
+c8 = bool(pari('red13(c0) != 0')); log(el(), "[8] c0 (tau_1 = c0 tau) is a 13-adic unit, so b_3/c0 is one too:", c8)
+PASS = c1 and c2 and c3 and c4 and c5 and c6 and c7 and c8
 log("==> EIGHT-POINT TEST:", "PASS -- the eight simple ramification points of tau lie over the single value b_3; tau has exactly three branch points" if PASS else "FAIL")
+if not PASS: sys.exit(1)
 for fn in ("eightpoint-witness.txt", "stage3-b3.bin"):
     if os.path.exists(fn): os.remove(fn)
 pari(r'write("eightpoint-witness.txt", "\\ Eight-point witness. b3 in L = F(sqrt(-23)), f = y^6-y^5-3y^4-3y^3+y^2+5y+4, x = sqrt(-23); q7, d8 as coefficient vectors [c_0, ..., c_deg] (monic); H_0(b3, U) = q7(U) d8(U)^2 exactly in L[U].")')

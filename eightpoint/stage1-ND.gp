@@ -50,5 +50,6 @@ INV = DP/NPL + O(T^(NPP-2));
 c0 = polcoef(trunc(INV, 27), 23);
 print("  1/tau = c0 z^23 (1 + a1 z + a2 z^2 + ...), [a1,a2] = ", [polcoef(trunc(INV,27),24)/c0, polcoef(trunc(INV,27),25)/c0]);
 print("  digits of c0: ", #Str(lift(lift(c0))));
+system("rm -f stage1-DN.bin");   \\ writebin appends to an existing file
 writebin("stage1-DN.bin", [DVEC, NVEC, c0]);
 print("  written stage1-DN.bin  [DVEC, NVEC, c0]");

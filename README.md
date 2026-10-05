@@ -37,7 +37,7 @@ geometry of the rational point.
 | Path | Contents | Paper |
 | --- | --- | --- |
 | `paper/` | LaTeX source, ancillary table of the 49 coefficients of H', compiled PDFs | — |
-| `relq/` | the exact canonical model over L (`model-hat.gp`, SHA-256 `7423ca42…`), the exact verification (V1)–(V8) (`run_verify.gp`, `verify_L.gp`, log), and the 13-adic lift / recognition scripts that found it | §12.2, Thm 12.2 Steps 1–3, 6–8 |
+| `relq/` | the exact canonical model over L (`model-hat.gp`, SHA-256 `7423ca42…`), the exact verification (V1)–(V8) (`run_verify.gp`, `verify_L.gp`, `check_V1_f13.py`, logs), and the 13-adic lift / recognition scripts that found it | §12.2, Thm 12.2 Steps 1–3, 6–8 |
 | `eightpoint/` | the eight-point certificate (V9)–(V10): the plane relation H_0(τ₁, U₀) = 0 and the exact factorization H_0(b, U) = q₇ d₈² | Thm 12.2 Steps 4–5, Remark 12.5 |
 | `petri-f13/` | the exact characteristic-13 model, the degree-23 map, passport, and the Petri value modulo 13 | §4, §12.1 (binding at 13) |
 | `m23-sextic/` | the sextic Φ, the embedding r, Magma referee ledgers (copied from part one, MIT) | §13 |
@@ -45,25 +45,35 @@ geometry of the rational point.
 
 ### Status of this repository
 
-`relq/`, `eightpoint/`, `petri-f13/` and `m23-sextic/` are complete and
-replay. The Part I/II receipt directories named in the paper's Appendix D
-(`mon13/`, `harmonic/`, `tails/`, `heptad/`: `heptad13.py`,
-`heptad-certificate.json` (SHA-256 `0341e61a…`), `orient13.py`,
-`mon13-orientation.json` (`83ceaf81…`), `hprime-canon.txt` (`14bc240d…`),
-`m13a_canon.gp`, `elim_H.sing`, `canon_gaps.py`, `cyclic_design.py`,
-`cartier.py`, `newton_chambers.py`, `inf_montes.gp`) were archived off the
-working tree on 2026-09-29 and are being restored; the Zenodo archive of this
-repository is cut once they are in place. Until then the tag is a
-pre-release.
+`relq/run_verify.gp` + `relq/check_V1_f13.py`, `eightpoint/`, `petri-f13/`
+and `m23-sextic/` are complete and replay: every exact statement (V1)–(V10)
+that Theorem 12.2 rests on is reproducible from this checkout. Still to be
+restored from the 2026-09-29 archive (pre-release until then):
+
+- the Part I/II receipt directories of Appendix D — `mon13/` (`heptad13.py`,
+  `heptad-certificate.json` SHA-256 `0341e61a…`, `orient13.py`,
+  `mon13-orientation.json` `83ceaf81…`, `hprime-canon.txt` `14bc240d…`,
+  `m13a_canon.gp`, `elim_H.sing`, `canon_gaps.py`, `canon_2k.py`,
+  `canon_E.sing`, `canon_L9.sing`, `cyclic_design.py`), `harmonic/`
+  (`cartier.py`, `newton_chambers.py`, `inf_montes.gp`), `tails/`, `heptad/`;
+- the outputs of the 13-adic lift that found the model, `relq/liftb-400.json`,
+  `canon-400.json`, `reconCanon-400.json`, and the helper modules the lift
+  scripts import (`wk.py`, `lift13.py`, `recon.py`, `petri13.py`,
+  `petri13L.py`). These document how the model was found (Remark 12.4); the
+  proof does not use them. `relq/check_V1.py` needs them; the replayable
+  form of (V1) is `relq/check_V1_f13.py`, which compares `model-hat.gp`
+  reduced at the place above 13 with `petri-f13/exact-f13-map.json`.
 
 ## Replay the exact model and the eight-point certificate
 
-    pip install cypari2                      # PARI 2.17.x
-    cd relq && gp -q run_verify.gp            # (V1)–(V8), ~3–7 min
+    pip install cypari2                      # PARI 2.17.x; gp for run_verify.gp and stage 1
+    cd relq && gp -q --default parisizemax=4000000000 run_verify.gp   # (V2)–(V8), 3–7 min
+    python3 check_V1_f13.py                   # (V1): reduction to the characteristic-13 model
     cd ../eightpoint && ./replay.sh           # (V9)–(V10), ~18 min on 2 cores
 
-Expected: `run_verify.gp` prints `==> g_U = Phi : 1`; `eightpoint/stage3.log`
-ends with `EIGHT-POINT TEST: PASS`.
+Expected: `run_verify.gp` prints `==> g_U = Phi : 1`; `check_V1_f13.py` prints
+`(V1) verified`; `eightpoint/stage3.log` ends with `EIGHT-POINT TEST: PASS`
+(exit code 1 otherwise).
 
 ## Verification layers
 

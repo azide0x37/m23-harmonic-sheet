@@ -54,9 +54,9 @@ Exact model, not height bounds and not more primes.
 
 The geometry that makes this a point of H -- deg tau = 23 (from (V2)+(V3)), three branch
 points, monodromy M23, the inertia labels -- is Steps 2-6 of Theorem 12.2 in the paper:
-base-point-freeness over L, then specialisation to the characteristic-13 fibre, then
-"M23 contains no transposition" to force the eight simple ramification points over a single
-third branch value.
+base-point-freeness over L; then (since 2026-10-05) the exact eight-point certificate
+(V9)-(V10) in ../eightpoint/ for "exactly three branch points"; then Grothendieck's tame
+specialisation to the characteristic-13 fibre for the monodromy and the labels.
 
 No height bound. No second prime. 13 is used only to certify that the special fibre is
 smooth and to supply its monodromy and inertia labels.

@@ -124,19 +124,25 @@ checks = List(); ndet = 0;
     if(!found, listput(checks, [mm, ls_coef(S, -mm) == 0])));
 }
 ''')
-log(el(), "coefficients determined:", pari('ndet'), "| gap orders:", pari('#checks'), "| all gap checks vanish:",
-    pari('vecmin(vector(#checks, i, checks[i][2])) == 1'))
-log(el(), "remainder S = H_0(tau_1,U_0): absolute precision", pari('ls_absprec(S)'), "| zero to that precision:", pari('ls_val(S) == []'))
+ok_gaps = bool(pari('vecmin(vector(#checks, i, checks[i][2])) == 1'))
+log(el(), "coefficients determined:", pari('ndet'), "| gap orders:", pari('#checks'), "| all gap checks vanish:", ok_gaps)
+log("gap orders (m, coefficient of z^-m vanishes):", pari('Vec(checks)'))
+ok_rem = bool(pari('ls_val(S) == []'))
+log(el(), "remainder S = H_0(tau_1,U_0): absolute precision", pari('ls_absprec(S)'), "| zero to that precision:", ok_rem)
+ok_h = bool(pari('H[6,1] == -1 && vecmin(vector(23, k, H[1,k] == 0)) == 1 && H[2,1] != 0'))
 log("h_{5,0} = -1:", pari('H[6,1] == -1'), "| H_0(0,U) = U^23 (h_{0,k} = 0 for k < 23):", pari('vecmin(vector(23, k, H[1,k] == 0)) == 1'),
     "| Eisenstein h_{1,0} != 0:", pari('H[2,1] != 0'))
+if not (ok_gaps and ok_rem and ok_h and int(pari('ndet')) == 72 and int(pari('#checks')) == 44):
+    log("*** STAGE 2 FAILED"); sys.exit(1)
 log("largest coefficient digits (Lw numerator):", pari('vecmax(vector(6, j, vecmax(vector(24, k, if(H[j,k] == 0, 0, #Str(lift(H[j,k])))))))'))
 # nested form for stage 3
 for fn in ("stage2-H0.bin", "eightpoint-H0.txt"):
     if os.path.exists(fn): os.remove(fn)
 pari(r'''
 Hn = matrix(6, 24, i, j, if(H[i,j] == 0, 0, Lnest(H[i,j])));
-writebin("stage2-H0.bin", [0, Hn, AU, UPM, 0]);
+UPMn = Lnest(UPM);
+writebin("stage2-H0.bin", [0, Hn, AU, UPMn, 0]);
 ''')
 pari(r'write("eightpoint-H0.txt", "\\ H_0(tau, U) = U^23 + sum_{j,k} Hcoef[j+1,k+1] tau^j U^k (rows j = 0..5, columns k = 0..23), coefficients in L = F(sqrt(-23)) as Mod(Mod(m(y),f) + Mod(n(y),f)*x, x^2+23); AU = the quadric A_U on x_i x_j (i<=j) with U_0 = A_U/x_3^2 before normalisation; U0PM = the subtracted value U_0(P_-).")')
-pari('write("eightpoint-H0.txt", "f = ", f); write("eightpoint-H0.txt", "Hcoef = ", Hn); write("eightpoint-H0.txt", "AU = ", AU); write("eightpoint-H0.txt", "U0PM = ", UPM)')
+pari('write("eightpoint-H0.txt", "f = ", f); write("eightpoint-H0.txt", "Hcoef = ", Hn); write("eightpoint-H0.txt", "AU = ", AU); write("eightpoint-H0.txt", "U0PM = ", UPMn)')
 log(el(), "written stage2-H0.bin (coefficient matrix, nested form) and eightpoint-H0.txt")
